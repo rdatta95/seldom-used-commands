@@ -19,5 +19,5 @@ gswin64c.exe -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dPDFSETTINGS=/screen -sOutputF
 ```
 Finer Controls
 ```powershell
-gswin64c.exe -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dPDFSETTINGS=/default -dCompatibilityLevel="1.4" -dDownsampleColorImages=true -dColorImageResolution=125 -dGrayImageResolution=125 -dMonoImageResolution=150 -sOutputFile="compressed.pdf" "input.pdf"
+gswin64c.exe -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dPDFSETTINGS=/default -dProcessColorModel=/DeviceGray -dColorConversionStrategy=/Gray -dOverrideICC -dCompatibilityLevel="1.4" -dDownsampleColorImages=true -dDownsampleGrayImages=true -dDownsampleMonoImages=true -dColorImageResolution=125 -dGrayImageResolution=125 -dMonoImageResolution=125 -sOutputFile="compressed.pdf" "input.pdf"
 ```
